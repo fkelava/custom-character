@@ -907,31 +907,31 @@ public unsafe class CustomCharacterModule : FhModule {
     private LpAbilityMapEngine* lpamng => Globals.SphereGrid.lpamng;
     private nint  sphere_bin_ptr => FhUtil.get_at<nint>(0x16860E4);
     private SphereGridMenuData* sphere_grid_menu_ptr  => (SphereGridMenuData*)FhUtil.get_at<nint>(0x01686108);
-    private short _DAT_01a8607e => FhUtil.get_at<byte>(0x0168607e);
-    private nint  p_DAT_01a86034  => (nint)FhUtil.ptr_at<nint>(0x1686034);
-    private nint  p_DAT_016c1830  => (nint)FhUtil.ptr_at<nint>(0x12C1830);
-    private nint  p_DAT_01a86060  => (nint)FhUtil.ptr_at<nint>(0x1686060);
+    private short _DAT_0168607e => FhUtil.get_at<byte>(0x0168607E);
+    private nint  p_DAT_01686034  => (nint)FhUtil.ptr_at<nint>(0x1686034);
+    private nint  p_DAT_012c1830  => (nint)FhUtil.ptr_at<nint>(0x12C1830);
+    private nint  p_DAT_01686060  => (nint)FhUtil.ptr_at<nint>(0x1686060);
     private nint* p_ppvCurPrimp => FhUtil.ptr_at<nint>(0x1F0FD2C);
 
     private uint _gParticleDoNotRender => FhUtil.get_at<uint>(0xEFB7D0);
 
 
-    private uint*  p_DAT_01841c30                       => FhUtil.ptr_at<uint>(0x01441c30);
-    private uint*  p_DAT_01841c34                       => FhUtil.ptr_at<uint>(0x01441c34);
-    private uint*  p_DAT_01841bec                       => FhUtil.ptr_at<uint>(0x01441bec);
-    private byte*  p_DAT_01841bd4_PauseMenuPlayerList   => FhUtil.ptr_at<byte>(0x01441bd4);
-    private uint*  p_DAT_01841be4_PauseMenuFrontlineNum => FhUtil.ptr_at<uint>(0x01441be4);
-    private uint*  p_UINT_01841bdc_PlayerListMax        => FhUtil.ptr_at<uint>(0x01441bdc);
-    private uint*  p_UINT_01841be0_PlayerListMax        => FhUtil.ptr_at<uint>(0x01441be0);
-    private uint*  p_DAT_01841be8_PauseMenuSelIdx       => FhUtil.ptr_at<uint>(0x01441be8);
+    private uint*  p_DAT_01441c30                       => FhUtil.ptr_at<uint>(0x01441c30);
+    private uint*  p_DAT_01441c34                       => FhUtil.ptr_at<uint>(0x01441c34);
+    private uint*  p_DAT_01441c2c                       => FhUtil.ptr_at<uint>(0x01441c2c);
+    private byte*  p_DAT_01441c14_PauseMenuPlayerList   => FhUtil.ptr_at<byte>(0x01441c14);
+    private uint*  p_DAT_01441c24_PauseMenuFrontlineNum => FhUtil.ptr_at<uint>(0x01441c24);
+    private uint*  p_UINT_01441c1c_PlayerListMax        => FhUtil.ptr_at<uint>(0x01441c1c);
+    private uint*  p_UINT_01441c20_PlayerListMax        => FhUtil.ptr_at<uint>(0x01441c20);
+    private uint*  p_DAT_01441c28_PauseMenuSelIdx       => FhUtil.ptr_at<uint>(0x01441c28);
 
-    private byte* p_DAT_01869ed9 => FhUtil.ptr_at<byte>(0x01469ed9);
-    private int*  p_DAT_01869ee4 => FhUtil.ptr_at<int >(0x01469ee4);
-    private byte* p_DAT_01869ed8 => FhUtil.ptr_at<byte>(0x01469ed8);
+    private byte* p_DAT_01469f19 => FhUtil.ptr_at<byte>(0x01469F19);
+    private int*  p_DAT_01469f24 => FhUtil.ptr_at<int >(0x01469F24);
+    private byte* p_DAT_01869F18 => FhUtil.ptr_at<byte>(0x01469F18);
 
-    private int  DAT_023057ec   => FhUtil.get_at<int>(0x1F057EC);
+    private int  DAT_01F057ec   => FhUtil.get_at<int>(0x1F057EC);
 
-    private int* p_DAT_018663a8 => FhUtil.ptr_at<int>(0x14663A8);
+    private int* p_DAT_014663e8 => FhUtil.ptr_at<int>(0x14663E8);
 
 
     //private Vector4* Vector4f_ARRAY_00c86010 => FhUtil.ptr_at<Vector4>(0x886010); // Selected character ambient(?) light color on surrounding nodes
@@ -944,31 +944,31 @@ public unsafe class CustomCharacterModule : FhModule {
     private uint* p_DAT_00c8659c; // Active indicator color
     private uint* p_DAT_00c865bc; // Highligted nodes color
 
-    private float* eff_sin_t => FhUtil.ptr_at<float>(0x844BE0);
+    private float* eff_sin_t => FhUtil.ptr_at<float>(0x844BF0);
 
-    private int DAT_023057f8 => FhUtil.get_at<int>(0x1F057F8);
-    private int DAT_023057fc => FhUtil.get_at<int>(0x1F057FC);
-    private int* p_DAT_01740830_sphere_grid_layout_dat => FhUtil.ptr_at<int>(0x1340830);
-
-
-    private int* p_DAT_01a85f70 => FhUtil.ptr_at<int>(0x1685F70);
-    private int* p_DAT_01a85f74 => FhUtil.ptr_at<int>(0x1685F74);
-    private int  DAT_02305800 => FhUtil.get_at<int>(0x1F05800);
-
-    private int* p_DAT_01a860ec => FhUtil.ptr_at<int>(0x16860EC);
-    private int* p_DAT_01a860f0 => FhUtil.ptr_at<int>(0x16860F0);
+    private int DAT_01f057f8 => FhUtil.get_at<int>(0x1F057F8);
+    private int DAT_01f057fc => FhUtil.get_at<int>(0x1F057FC);
+    private int* p_DAT_01340870_sphere_grid_layout_dat => FhUtil.ptr_at<int>(0x1340870);
 
 
-    private uint DAT_02305814 => FhUtil.get_at<uint>(0x01f05814);
-    private uint DAT_02305818 => FhUtil.get_at<uint>(0x01f05818);
-    private uint DAT_0230581c => FhUtil.get_at<uint>(0x01f0581c);
-    private uint DAT_02305820 => FhUtil.get_at<uint>(0x01f05820);
+    private int* p_DAT_01685f70 => FhUtil.ptr_at<int>(0x1685F70);
+    private int* p_DAT_01685f74 => FhUtil.ptr_at<int>(0x1685F74);
+    private int  DAT_01f05800 => FhUtil.get_at<int>(0x1F05800);
 
-    private short DAT_02305810 => FhUtil.get_at<short>(0x01f05810);
-    private short DAT_02305808 => FhUtil.get_at<short>(0x01f05808);
-    private uint  DAT_02305830 => FhUtil.get_at<uint>(0x01f05830);
-    private uint  DAT_0230580c => FhUtil.get_at<uint>(0x01f0580c);
-    private short DAT_02305804 => FhUtil.get_at<short>(0x01f05804);
+    private int* p_DAT_016860ec => FhUtil.ptr_at<int>(0x16860EC);
+    private int* p_DAT_016860f0 => FhUtil.ptr_at<int>(0x16860F0);
+
+
+    private uint DAT_01f05814 => FhUtil.get_at<uint>(0x01f05814);
+    private uint DAT_01f05818 => FhUtil.get_at<uint>(0x01f05818);
+    private uint DAT_01f0581c => FhUtil.get_at<uint>(0x01f0581c);
+    private uint DAT_01f05820 => FhUtil.get_at<uint>(0x01f05820);
+
+    private short DAT_01f05810 => FhUtil.get_at<short>(0x01f05810);
+    private short DAT_01f05808 => FhUtil.get_at<short>(0x01f05808);
+    private uint  DAT_01f05830 => FhUtil.get_at<uint>(0x01f05830);
+    private uint  DAT_01f0580c => FhUtil.get_at<uint>(0x01f0580c);
+    private short DAT_01f05804 => FhUtil.get_at<short>(0x01f05804);
 
 
 
@@ -994,7 +994,7 @@ public unsafe class CustomCharacterModule : FhModule {
     private Vector4* asmreg_ACC  => FhUtil.ptr_at<Vector4>(0x88F790);
 
 
-    private SphereGridLinkPoint* SphereGridLinkPoint_ARRAY_01693160 => FhUtil.ptr_at<SphereGridLinkPoint>(0x1293160);
+    private SphereGridLinkPoint* SphereGridLinkPoint_ARRAY_01693160 => FhUtil.ptr_at<SphereGridLinkPoint>(0x12931A0);
 
 
     public struct FUN_00a59710_Struct {
@@ -1203,7 +1203,7 @@ public unsafe class CustomCharacterModule : FhModule {
             plVar4 = lpamng;
         }
         plVar4->__0x11650 += 1;
-        if (_DAT_01a8607e == 0) {
+        if (_DAT_0168607e == 0) {
             iVar6 = 0;
             pfVar5 = &custom_party_infos[0].pos_circle_radius;
             plVar4 = lpamng;
@@ -1240,7 +1240,7 @@ public unsafe class CustomCharacterModule : FhModule {
             if (0x7f < lpamng->__0x115C6) {
                 lpamng->__0x115C6 = 0x80;
             }
-            if (_DAT_01a8607e == 0) {
+            if (_DAT_0168607e == 0) {
                 custom_party_infos[lpamng->moving_chr_id].pos_circle_radius = 0.0f;
                 lpamng->__0x1164C = 1;
                 lpamng->__0x115C6 = 0;
@@ -1263,8 +1263,8 @@ public unsafe class CustomCharacterModule : FhModule {
                     (plVar2->cam_desired_pos).Y = local_18.Y;
                     (plVar2->cam_desired_pos).Z = local_18.Z;
                     (plVar2->cam_desired_pos).W = local_18.W;
-                    pppCreateHeap.fnptr!(p_DAT_01a86034, p_DAT_016c1830, 0x7d000);
-                    FUN_0065bad0.fnptr!(p_DAT_01a86060, 1, local_18.X, local_18.Y, 0, 0, 0, 0, 0.5f, 0.5f, 0.5f);
+                    pppCreateHeap.fnptr!(p_DAT_01686034, p_DAT_012c1830, 0x7d000);
+                    FUN_0065bad0.fnptr!(p_DAT_01686060, 1, local_18.X, local_18.Y, 0, 0, 0, 0, 0.5f, 0.5f, 0.5f);
                     custom_party_infos[lpamng->moving_chr_id].current_node_idx = lpamng->move_last_target_node_idx;
                     FUN_0065a990.fnptr!(lpamng->moving_chr_id);
                     FUN_00658080.fnptr!(lpamng->moving_chr_id);
@@ -1283,7 +1283,7 @@ public unsafe class CustomCharacterModule : FhModule {
                 if (0x7f < lpamng->__0x115C6) {
                     lpamng->__0x115C6 = 0x80;
                 }
-                if (_DAT_01a8607e == 0) {
+                if (_DAT_0168607e == 0) {
                     lpamng->__0x115C6 = 0x80;
                     lpamng->__0x115A8 = lpamng->__0x115B0;
                     lpamng->__0x115B0 = 0;
@@ -1316,8 +1316,8 @@ public unsafe class CustomCharacterModule : FhModule {
         lpamng->moving_progress = 0;
         lpamng->move_last_target_node_idx = node_idx;
         lpamng->moving_chr_id = (byte)chr_id;
-        pppCreateHeap.fnptr!(p_DAT_01a86034, p_DAT_016c1830, 0x7d000);
-        FUN_0065bad0.fnptr!(p_DAT_01a86060, 2, _lpamng->nodes[current_node].x,
+        pppCreateHeap.fnptr!(p_DAT_01686034, p_DAT_012c1830, 0x7d000);
+        FUN_0065bad0.fnptr!(p_DAT_01686060, 2, _lpamng->nodes[current_node].x,
                      _lpamng->nodes[current_node].y, 0, 0, 0, 0, 0.5f, 0.5f, 0.5f);
         if (lpamng->__0x115B4 == 0) {
             lpamng->__0x115B4 = lpamng->__0x115AC;
@@ -1833,7 +1833,7 @@ public unsafe class CustomCharacterModule : FhModule {
         Matrix4x4 local_58 = new();
 
         plVar3 = lpamng;
-        iVar4 = DAT_023057fc;
+        iVar4 = DAT_01f057fc;
         local_150.__0x0 = 4;
         local_150.rgba = p_DAT_00c86580[lpamng->current_chr_id]; // Extend with custom color for Seymour
         //local_150.__0x18 = *(p_DAT_00c86580 + (uint)lpamng->current_chr_id * 4);
@@ -1852,7 +1852,7 @@ public unsafe class CustomCharacterModule : FhModule {
         local_150.__0xA = 0;
         local_150.__0x3C = 0;
         local_150.__0x38 = 0;
-        local_150.__0x4 = (int)p_DAT_01740830_sphere_grid_layout_dat;
+        local_150.__0x4 = (int)p_DAT_01340870_sphere_grid_layout_dat;
         local_150.__0xC = 0;
         local_150.__0x10 = 0;
         local_150.__0x14 = 0;
@@ -1898,7 +1898,7 @@ public unsafe class CustomCharacterModule : FhModule {
         local_150.__0xA = 0;
         local_150.__0x3C = 0;
         local_150.__0x38 = 0;
-        local_150.__0x4 = (int)p_DAT_01740830_sphere_grid_layout_dat;
+        local_150.__0x4 = (int)p_DAT_01340870_sphere_grid_layout_dat;
         local_150.__0xC = 0;
         local_150.__0x10 = 0;
         local_150.__0x14 = 0;
@@ -1970,7 +1970,7 @@ public unsafe class CustomCharacterModule : FhModule {
                 local_58.M22 = local_58.M11;
                 local_58.M33 = local_58.M11;
                 cdc_FFXVu0MulMatrix.fnptr!(&local_d8, &lpamng->__0x113E0, &local_58);
-                FUN_006657c0.fnptr!(DAT_023057f8, &local_150, 4, &lpamng->__0x116A4);
+                FUN_006657c0.fnptr!(DAT_01f057f8, &local_150, 4, &lpamng->__0x116A4);
             }
             uVar5 = uVar5 + 1;
             //pfVar6 = pfVar6 + 0x14;
@@ -1998,14 +1998,14 @@ public unsafe class CustomCharacterModule : FhModule {
         int chr_id_00;
         SphereGridMenuData *menuData;
 
-        *p_DAT_01a85f70 = 0;
+        *p_DAT_01685f70 = 0;
         LVar7 = FhXCall.TOGetFFXLang.fnptr!();
         /* Japanese, Korean, Chinese, or Debug */
         if ((LVar7 == FhLangId.Japanese) || ((8 < (int)LVar7 && ((int)LVar7 < 0xc)))) {
-            *p_DAT_01a85f74 = 1;
+            *p_DAT_01685f74 = 1;
         }
         else {
-            *p_DAT_01a85f74 = 0;
+            *p_DAT_01685f74 = 0;
         }
         FUN_006572e0.fnptr!();
         FUN_00657620.fnptr!();
@@ -2119,7 +2119,7 @@ public unsafe class CustomCharacterModule : FhModule {
         FUN_0065a800.fnptr!();
         FUN_00657120.fnptr!();
         FUN_0065b030.fnptr!();
-        pppInitEnv.fnptr!(p_DAT_01a86034, DAT_02305800, p_DAT_016c1830, 0x7d000);
+        pppInitEnv.fnptr!(p_DAT_01686034, DAT_01f05800, p_DAT_012c1830, 0x7d000);
         menuData = sphere_grid_menu_ptr;
         menuData->menus[0].pos2.x = 0x30;
         menuData->menus[0].pos2.y = 0x23;
@@ -2156,7 +2156,7 @@ public unsafe class CustomCharacterModule : FhModule {
         menuData->menus[7].num_columns = 1;
         menuData->menus[7].func2 = FhUtil.ptr_at<nint>(0x64F930); // FUN_00a4f930
         menuData->menus[7].func3 = FhUtil.ptr_at<nint>(0x6570A0); // FUN_00a570a0
-        if (*p_DAT_01a85f74 == 0) {
+        if (*p_DAT_01685f74 == 0) {
             menuData->menus[7].num_entries = 0;
             menuData->menus[7].__0x20 = 10;
         }
@@ -2216,7 +2216,7 @@ public unsafe class CustomCharacterModule : FhModule {
         menuData->menus[8].__0x24 = 0;
         menuData->menus[8].is_full = false;
         menuData->menus[8].func1 = (void*)0;
-        if (*p_DAT_01a85f74 == 0) {
+        if (*p_DAT_01685f74 == 0) {
             menuData->menus[8].pos2.w = 0xb0;
             menuData->menus[8].pos2.h = 0x50;
             menuData->menus[8].pos1.w = 0xb0;
@@ -2251,7 +2251,7 @@ public unsafe class CustomCharacterModule : FhModule {
         menuData->menus[6].is_full = false;
         menuData->menus[6].func3 = (void*)0x0;
         menuData->menus[6].func1 = (void*)0;
-        if (*p_DAT_01a85f74 == 0) {
+        if (*p_DAT_01685f74 == 0) {
             menuData->menus[6].pos2.w = 0xb0;
             menuData->menus[6].pos2.h = 0x14;
             menuData->menus[6].pos1.w = 0xb0;
@@ -2299,7 +2299,7 @@ public unsafe class CustomCharacterModule : FhModule {
         menuData->menus[1].is_full = false;
         menuData->menus[1].func3 = (void*)0x0;
         menuData->menus[1].func1 = (void*)0;
-        if (*p_DAT_01a85f74 == 0) {
+        if (*p_DAT_01685f74 == 0) {
             *(uint*)&menuData->menus[1].pos2 = 0x01140088;
             menuData->menus[1].pos2.w = 0xf0;
             menuData->menus[1].pos2.h = 100;
@@ -2504,7 +2504,7 @@ public unsafe class CustomCharacterModule : FhModule {
         menuData->menus[3].is_full = false;
         menuData->menus[3].func3 = (void*)0x0;
         menuData->menus[3].func1 = (void*)0;
-        if (*p_DAT_01a85f74 == 0) {
+        if (*p_DAT_01685f74 == 0) {
             *(uint*)&menuData->menus[3].pos2 = 0x00d80048;
             menuData->menus[3].pos2.w = 0x170;
             menuData->menus[3].pos2.h = 0xa0;
@@ -2537,7 +2537,7 @@ public unsafe class CustomCharacterModule : FhModule {
         menuData->menus[2].is_full = false;
         menuData->menus[2].func3 = (void*)0x0;
         menuData->menus[2].func1 = (void*)0;
-        if (*p_DAT_01a85f74 == 0) {
+        if (*p_DAT_01685f74 == 0) {
             *(uint*)&menuData->menus[2].pos2 = 0x00d80048;
             menuData->menus[2].pos2.w = 0x170;
             menuData->menus[2].pos2.h = 0xa0;
@@ -2575,7 +2575,7 @@ public unsafe class CustomCharacterModule : FhModule {
         menuData->menus[4].is_full = false;
         menuData->menus[4].func3 = (void*)0x0;
         menuData->menus[4].func1 = (void*)0;
-        if (*p_DAT_01a85f74 == 0) {
+        if (*p_DAT_01685f74 == 0) {
             *(uint*)&menuData->menus[4].pos2 = 0x01000040;
             menuData->menus[4].pos2.w = 0x180;
             menuData->menus[4].pos2.h = 0x78;
@@ -2611,7 +2611,7 @@ public unsafe class CustomCharacterModule : FhModule {
         menuData->menus[5].is_full = false;
         menuData->menus[5].func3 = (void*)0x0;
         menuData->menus[5].func1 = (void*)0;
-        if (*p_DAT_01a85f74 == 0) {
+        if (*p_DAT_01685f74 == 0) {
             *(uint*)&menuData->menus[5].pos2 = 0x01140040;
             menuData->menus[5].pos2.w = 0x180;
             menuData->menus[5].pos2.h = 100;
@@ -2649,7 +2649,7 @@ public unsafe class CustomCharacterModule : FhModule {
         menuData->menus[9].is_full = false;
         menuData->menus[9].func3 = (void*)0x0;
         menuData->menus[9].func1 = (void*)0;
-        if (*p_DAT_01a85f74 == 0) {
+        if (*p_DAT_01685f74 == 0) {
             menuData->menus[9].pos2.w = 0x90;
             menuData->menus[9].pos2.h = 0x14;
             menuData->menus[9].pos1.w = 0x90;
@@ -2699,7 +2699,7 @@ public unsafe class CustomCharacterModule : FhModule {
         menuData->menus[10].is_full = false;
         menuData->menus[10].func3 = (void*)0x0;
         menuData->menus[10].func1 = (void*)0;
-        if (*p_DAT_01a85f74 == 0) {
+        if (*p_DAT_01685f74 == 0) {
             menuData->menus[10].pos2.w = 0x90;
             menuData->menus[10].pos2.h = 0x14;
             menuData->menus[10].pos1.w = 0x90;
@@ -2791,8 +2791,8 @@ public unsafe class CustomCharacterModule : FhModule {
         graphicAbmapCreate.fnptr!(*(void**)&lpamng->__0x116A4);
         graphicDeActivateLoadingScreen.fnptr!();
         graphicSetFlipVsnc.fnptr!(2);
-        *p_DAT_01a860ec = (int)user_malloc.fnptr!(0x200);
-        *p_DAT_01a860f0 = (int)user_malloc.fnptr!(0x200);
+        *p_DAT_016860ec = (int)user_malloc.fnptr!(0x200);
+        *p_DAT_016860f0 = (int)user_malloc.fnptr!(0x200);
         return;
     }
 
@@ -2802,7 +2802,7 @@ public unsafe class CustomCharacterModule : FhModule {
 
         pSVar1 = sphere_grid_menu_ptr;
         if (param_4 != 0) {
-            bVar2 = *p_DAT_01a85f74 == 0;
+            bVar2 = *p_DAT_01685f74 == 0;
             *(byte*)((int)&sphere_grid_menu_ptr->menus[8].num_columns + 1) = 1;
             *(int*)&pSVar1->menus[8].pos3 = 0x01640030;
             pSVar1->menus[8].__0x32 = 0;
@@ -2894,11 +2894,11 @@ public unsafe class CustomCharacterModule : FhModule {
 
         width_sum = 0;
         cur_char = *name;
-        *p_DAT_018663a8 = 0;
+        *p_DAT_014663e8 = 0;
         while (cur_char != 0x0) {
             name = FUN_004b7c00.fnptr!(name, 0, &char_width, param_2);
             width_sum = (int)(width_sum + char_width);
-            *p_DAT_018663a8 = *p_DAT_018663a8 + 1;
+            *p_DAT_014663e8 = *p_DAT_014663e8 + 1;
             cur_char = *name;
         }
         return width_sum;
@@ -2967,11 +2967,11 @@ public unsafe class CustomCharacterModule : FhModule {
         (chr_info->label_pos).Y = (chr_info->pos).Y - eff_sin_t[uVar1 >> 4] * chr_info->pos_circle_radius;
         (chr_info->label_pos).Z = 0.0f;
         (chr_info->label_pos).W = 1.0f;
-        uVar2 = DAT_02305814;
-        uVar3 = DAT_02305818;
+        uVar2 = DAT_01f05814;
+        uVar3 = DAT_01f05818;
         if ((chr_info->__0x4E & 4) == 0) {
-            uVar2 = DAT_0230581c;
-            uVar3 = DAT_02305820;
+            uVar2 = DAT_01f0581c;
+            uVar3 = DAT_01f05820;
         }
         pos_y = (short)uVar2;
         pos_x = (short)uVar3;
@@ -2981,29 +2981,29 @@ public unsafe class CustomCharacterModule : FhModule {
                 /* Topright */
                 chr_info->__0x48 = (short)-pos_y;
                 chr_info->__0x46 = pos_x;
-                chr_info->__0x4A = DAT_02305810;
-                chr_info->__0x4C = DAT_02305808;
+                chr_info->__0x4A = DAT_01f05810;
+                chr_info->__0x4C = DAT_01f05808;
                 return;
             case 1:
                 /* Topleft */
                 chr_info->__0x48 = (short)-pos_y;
                 chr_info->__0x46 = (short)-pos_x;
-                chr_info->__0x4A = (short)-((short)DAT_02305830 + (short)DAT_0230580c);
-                chr_info->__0x4C = DAT_02305808;
+                chr_info->__0x4A = (short)-((short)DAT_01f05830 + (short)DAT_01f0580c);
+                chr_info->__0x4C = DAT_01f05808;
                 return;
             case 2:
                 /* Bottomleft */
                 chr_info->__0x48 = pos_y;
                 chr_info->__0x46 = (short)-pos_x;
-                chr_info->__0x4A = (short)-((short)DAT_02305830 + (short)DAT_0230580c);
-                chr_info->__0x4C = DAT_02305804;
+                chr_info->__0x4A = (short)-((short)DAT_01f05830 + (short)DAT_01f0580c);
+                chr_info->__0x4C = DAT_01f05804;
                 return;
             case 3:
                 /* Bottomright */
                 chr_info->__0x46 = pos_x;
                 chr_info->__0x48 = pos_y;
-                chr_info->__0x4A = DAT_02305810;
-                chr_info->__0x4C = DAT_02305804;
+                chr_info->__0x4A = DAT_01f05810;
+                chr_info->__0x4C = DAT_01f05804;
                 return;
         }
         return;
@@ -3503,36 +3503,36 @@ public unsafe class CustomCharacterModule : FhModule {
         int local_8;
 
         uVar5 = param_1 & 0xffff0000;
-        *p_DAT_01841c30 = 0;
-        *p_DAT_01841c34 = 0;
+        *p_DAT_01441c30 = 0;
+        *p_DAT_01441c34 = 0;
         pbVar2 = MsGetSaveInParty.fnptr!(&local_8);
         uVar7 = 0;
         uVar6 = 0;
         iVar4 = 0;
         local_c = 0;
-        *p_DAT_01841bec = 0;
+        *p_DAT_01441c2c = 0;
         if (0 < local_8) {
             uVar7 = 0;
             do {
                 bVar1 = pbVar2[iVar4];
                 if (((bVar1 != 0xff)) && (uVar5 != 0x10000)) {
-                    p_DAT_01841bd4_PauseMenuPlayerList[uVar6] = bVar1;
+                    p_DAT_01441c14_PauseMenuPlayerList[uVar6] = bVar1;
                     uVar3 = (uint)(1 << (pbVar2[iVar4] & 0x1f));
                     uVar6 = uVar6 + 1;
                     uVar7 = uVar7 | uVar3;
-                    *p_DAT_01841bec = *p_DAT_01841bec | uVar3;
+                    *p_DAT_01441c2c = *p_DAT_01441c2c | uVar3;
                 }
                 iVar4 = iVar4 + 1;
             } while (iVar4 < local_8);
         }
-        *p_DAT_01841be4_PauseMenuFrontlineNum = uVar6;
+        *p_DAT_01441c24_PauseMenuFrontlineNum = uVar6;
         pbVar2 = MsGetSaveOutParty.fnptr!(&local_8);
         iVar4 = 0;
         if (0 < local_8) {
             do {
                 bVar1 = pbVar2[iVar4];
                 if (((bVar1 != 0xff)) && (uVar5 != 0x10000)) {
-                    p_DAT_01841bd4_PauseMenuPlayerList[uVar6] = bVar1;
+                    p_DAT_01441c14_PauseMenuPlayerList[uVar6] = bVar1;
                     uVar6 = uVar6 + 1;
                     uVar7 = uVar7 | (uint)(1 << (pbVar2[iVar4] & 0x1f));
                 }
@@ -3540,8 +3540,8 @@ public unsafe class CustomCharacterModule : FhModule {
             } while (iVar4 < local_8);
         }
         iVar4 = 0;
-        *p_UINT_01841bdc_PlayerListMax = uVar6;
-        *p_DAT_01841c30 = uVar7;
+        *p_UINT_01441c1c_PlayerListMax = uVar6;
+        *p_DAT_01441c30 = uVar7;
         do {
             idx = (byte)iVar4;
             //if (bVar1 &&
@@ -3551,15 +3551,15 @@ public unsafe class CustomCharacterModule : FhModule {
                 uVar3 = (uint)(1 << (idx & 0x1f));
                 local_c = local_c | uVar3;
                 if ((uVar7 & uVar3) == 0) {
-                    p_DAT_01841bd4_PauseMenuPlayerList[uVar6] = idx;
+                    p_DAT_01441c14_PauseMenuPlayerList[uVar6] = idx;
                     uVar6 = uVar6 + 1;
                 }
             }
             iVar4 = iVar4 + 1;
         } while (iVar4 < 8);
-        *p_UINT_01841be0_PlayerListMax = uVar6;
-        *p_DAT_01841c34 = local_c | uVar7;
-        *p_DAT_01841be8_PauseMenuSelIdx = 0;
+        *p_UINT_01441c20_PlayerListMax = uVar6;
+        *p_DAT_01441c34 = local_c | uVar7;
+        *p_DAT_01441c28_PauseMenuSelIdx = 0;
         return;
     }
     void h_FUN_008bddc0() {
@@ -3572,12 +3572,12 @@ public unsafe class CustomCharacterModule : FhModule {
         int local_8;
 
         iVar3 = 0;
-        *p_DAT_01869ed9 = 0;
+        *p_DAT_01469f19 = 0;
         ply_chr_id = 0;
         do {
             if (Globals.Battle.reward_data->in_battle[ply_chr_id] != false) {
                 if (Globals.Battle.reward_data->get_ap_temp[ply_chr_id] != 0) {
-                    *p_DAT_01869ed9 = 1;
+                    *p_DAT_01469f19 = 1;
                 }
                 iVar3 = iVar3 + 1;
             }
@@ -3586,7 +3586,7 @@ public unsafe class CustomCharacterModule : FhModule {
         iVar2 = 0;
         local_8 = 0;
         uVar4 = 0;
-        puVar5 = p_DAT_01869ee4;
+        puVar5 = p_DAT_01469f24;
         do {
             if (Globals.Battle.reward_data->in_battle[(int)uVar4] != false) {
                 *(short*)((int)puVar5 + -2) = (short)((short)iVar2 * 6);
@@ -3605,7 +3605,7 @@ public unsafe class CustomCharacterModule : FhModule {
             }
             uVar4 = uVar4 + 1;
         } while ((int)uVar4 < 8);
-        *p_DAT_01869ed8 = (byte)iVar3;
+        *p_DAT_01869F18 = (byte)iVar3;
         FUN_004ba400.fnptr!();
         return;
     }
@@ -3656,7 +3656,7 @@ public unsafe class CustomCharacterModule : FhModule {
         local_150.__0xA = 0;
         local_150.__0x3C = 0;
         local_150.__0x38 = 0;
-        local_150.__0x4 = (int)p_DAT_01740830_sphere_grid_layout_dat;
+        local_150.__0x4 = (int)p_DAT_01340870_sphere_grid_layout_dat;
         local_150.__0xC = 0;
         local_150.__0x10 = 0;
         local_150.__0x14 = 0;
@@ -3691,7 +3691,7 @@ public unsafe class CustomCharacterModule : FhModule {
                         cdc_FFXVu0MulMatrix.fnptr!(&local_d8, &plVar5->__0x113E0, &local_98);
                         local_58.M43 = -1.0f;
                         local_150.rgba = 0;
-                        op1_md_draw_eiabm_sphe.fnptr!(DAT_023057ec, &local_150, (lpamng->node_count - iVar6) + -1, iVar7);
+                        op1_md_draw_eiabm_sphe.fnptr!(DAT_01F057ec, &local_150, (lpamng->node_count - iVar6) + -1, iVar7);
                         iVar7 = iVar7 + 1;
                     } while (iVar7 < num_characters);
                 }
@@ -3707,7 +3707,7 @@ public unsafe class CustomCharacterModule : FhModule {
                             cdc_FFXVu0MulMatrix.fnptr!(&local_d8, &plVar5->__0x113E0, &local_98);
                             local_58.M43 = -1.0f;
                             local_150.rgba = 0;
-                            op1_md_draw_eiabm_sphe.fnptr!(DAT_023057ec, &local_150, (lpamng->node_count - iVar6) + -1, iVar7);
+                            op1_md_draw_eiabm_sphe.fnptr!(DAT_01F057ec, &local_150, (lpamng->node_count - iVar6) + -1, iVar7);
                             iVar7 = iVar7 + 1;
                         } while (iVar7 < num_characters);
                     }
@@ -3758,7 +3758,7 @@ public unsafe class CustomCharacterModule : FhModule {
                             //_logger.Debug($"Pos: {node->pos} + {local_164->xy}");
                             FUN_0065a360.fnptr!(&local_98, node, local_164, 0.0008f);
                             cdc_FFXVu0MulMatrix.fnptr!(&local_d8, &plVar8->__0x113E0, &local_98);
-                            op1_md_draw_eiabm_sphe.fnptr!(DAT_023057ec, &local_150, (lpamng->node_count - iVar6) + -1, chr_id);
+                            op1_md_draw_eiabm_sphe.fnptr!(DAT_01F057ec, &local_150, (lpamng->node_count - iVar6) + -1, chr_id);
                             chr_id = chr_id + 1;
                             activated_by = (byte)(activated_by >> 1);
                             if (num_characters-1 < chr_id) break;
@@ -3853,7 +3853,7 @@ public unsafe class CustomCharacterModule : FhModule {
             local_1c0.__0xA = 0;
             local_1c0.__0x3C = 0;
             local_1c0.__0x38 = 0;
-            local_1c0.__0x4 = (int)p_DAT_01740830_sphere_grid_layout_dat;
+            local_1c0.__0x4 = (int)p_DAT_01340870_sphere_grid_layout_dat;
             local_1c0.__0xC = 0;
             local_1c0.__0x10 = 0;
             local_1c0.__0x14 = 0;
@@ -3893,7 +3893,7 @@ public unsafe class CustomCharacterModule : FhModule {
                                 FUN_0065ad30.fnptr!(&local_98, node, plVar3->node_type_infos[uVar1].__0x10);
                                 FUN_0065a360.fnptr!(&local_98, node, pVVar10, 0.0008f);
                                 cdc_FFXVu0MulMatrix.fnptr!(&local_d8, &lpamng->__0x113E0, &local_98);
-                                op1_md_draw_eiabm_sphe.fnptr!(DAT_023057ec, &local_1c0, (lpamng->node_count - iVar11) + -1, iVar5);
+                                op1_md_draw_eiabm_sphe.fnptr!(DAT_01F057ec, &local_1c0, (lpamng->node_count - iVar11) + -1, iVar5);
                             }
                             piVar7 = piVar7 + 4;
                             iVar5 = iVar5 + -1;
@@ -3970,7 +3970,7 @@ public unsafe class CustomCharacterModule : FhModule {
         local_150.__0xA = 0;
         local_150.__0x3C = 0;
         local_150.__0x38 = 0;
-        local_150.__0x4 = (int)p_DAT_01740830_sphere_grid_layout_dat;
+        local_150.__0x4 = (int)p_DAT_01340870_sphere_grid_layout_dat;
         local_150.__0xC = 0;
         local_150.__0x10 = 0;
         local_150.__0x14 = 0;
@@ -3988,7 +3988,7 @@ public unsafe class CustomCharacterModule : FhModule {
                 cdc_FFXVu0MulMatrix.fnptr!(&local_d8, &pLVar5->__0x113E0, &local_98);
                 local_58.M43 = -1.0f;
                 local_150.rgba = 0;
-                op1_md_draw_eiabm_sphe.fnptr!(DAT_023057ec, &local_150, param_1, iVar6);
+                op1_md_draw_eiabm_sphe.fnptr!(DAT_01F057ec, &local_150, param_1, iVar6);
                 iVar6 = iVar6 + -1;
             } while (-(num_characters+1) < iVar6);
         }
@@ -4036,7 +4036,7 @@ public unsafe class CustomCharacterModule : FhModule {
                 FUN_0065ad30.fnptr!(&local_98, pSVar1, pLVar5->node_type_infos[(int)SVar2].__0x10);
                 FUN_0065a360.fnptr!(&local_98, pSVar1, local_164, 0.0008f);
                 cdc_FFXVu0MulMatrix.fnptr!(&local_d8, &pLVar7->__0x113E0, &local_98);
-                op1_md_draw_eiabm_sphe.fnptr!(DAT_023057ec, &local_150, param_1, local_15c);
+                op1_md_draw_eiabm_sphe.fnptr!(DAT_01F057ec, &local_150, param_1, local_15c);
                 local_15c = local_15c + -1;
                 local_16c = local_16c + 1;
                 local_151 = (byte)(local_151 >> 1);
@@ -4204,7 +4204,7 @@ public unsafe class CustomCharacterModule : FhModule {
             NativeMemory.Fill(puVar3->field97_0x94->field7_0x1c, field7_0x1c_size, 0);
             NativeMemory.Fill(puVar3->field97_0x94->field8_0x20, 0x100, 0);
             if (*(int*)abmapManager == 0) {
-                byte* pcVar9 = (byte*)FhUtil.get_at<nint>(0x833978);
+                byte* pcVar9 = (byte*)FhUtil.get_at<nint>(0x833980);
                 int i = 0;
                 do {
                     i++;
@@ -4214,7 +4214,7 @@ public unsafe class CustomCharacterModule : FhModule {
 
                 FhLangId iVar11 = FhXCall.TOGetFFXLang.fnptr!();
                 if (iVar11 == FhLangId.Debug) {
-                    pcVar9 = (byte*)FhUtil.get_at<nint>(0x8339E0);
+                    pcVar9 = (byte*)FhUtil.get_at<nint>(0x8339E8);
                     int j = 0;
                     do {
                         j++;
@@ -4223,7 +4223,7 @@ public unsafe class CustomCharacterModule : FhModule {
                     NativeMemory.Copy(pcVar9, puVar3->field97_0x94->field8_0x20, (nuint)j);
                 }
             } else if (*(int*)abmapManager == 2) {
-                byte* pcVar9 = (byte*)FhUtil.get_at<nint>(0x8339B4);
+                byte* pcVar9 = (byte*)FhUtil.get_at<nint>(0x8339BC);
                 int i = 0;
                 do {
                     i++;
@@ -4233,7 +4233,7 @@ public unsafe class CustomCharacterModule : FhModule {
 
                 FhLangId iVar11 = FhXCall.TOGetFFXLang.fnptr!();
                 if (iVar11 == FhLangId.Debug) {
-                    pcVar9 = (byte*)FhUtil.get_at<nint>(0x833A1C);
+                    pcVar9 = (byte*)FhUtil.get_at<nint>(0x833A24);
                     int j = 0;
                     do {
                         j++;
